@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import theme from "../../assets/theme.js";
 
-const jainamLogo = require("../../assets/images/jainam_logo_3.png");
+const jainamLogo = require("../../assets/images/jainam_logo_6.png");
 const Navbar = () => {
   return (
     
@@ -25,7 +25,9 @@ const Navbar = () => {
             marginBottom={-1}
             marginLeft={-3}
           >
-                      <img src={jainamLogo} alt="jainam" height={60}/>
+                      <img src={jainamLogo} alt="jainam" width={60} style={{
+                        marginLeft:50
+                      }}/>
             {/* <strong>Jainam Gala</strong> */}
           </Typography>
 
@@ -35,11 +37,11 @@ const Navbar = () => {
                 <strong>Home</strong>
               </Typography>
             </Button>
-            <Button color="primary" href="about">
+            {/* <Button color="primary" href="about">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>About</strong>
               </Typography>
-            </Button>
+            </Button> */}
             <Button color="primary" href="/work-experience">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Work Experience</strong>
@@ -47,14 +49,14 @@ const Navbar = () => {
             </Button>
             <Button color="primary" href="/skills">
               <Typography fontFamily={"monospace"} fontSize={20}>
-                <strong>Skills & Projects</strong>
+                <strong>Projects</strong>
               </Typography>
             </Button>
-            <Button color="primary" href="/">
+            {/* <Button color="primary" href="/">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Let's Work</strong>
               </Typography>
-            </Button>
+            </Button> */}
           </Stack>
         </Toolbar>
       </AppBar>

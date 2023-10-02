@@ -37,7 +37,7 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h2"}
             component={"h2"}
-            color={"#eeba2c"}
+            color={"#62b0a5"}
           >
             Jainam Gala
           </Typography>
@@ -49,7 +49,7 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#eeba2c"}
+            color={"#62b0a5"}
           >
             Master of Information Systems Management
           </Typography>
@@ -61,7 +61,7 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#eeba2c"}
+            color={"#62b0a5"}
           >
             @
           </Typography>
@@ -73,7 +73,7 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#eeba2c"}
+            color={"#62b0a5"}
           >
             Carnegie Mellon University
           </Typography>

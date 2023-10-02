@@ -43,9 +43,10 @@ const Home = () => {
                       color={"white"}
                     >
                       Hey! <br />
-                      This is <span style={{ color: "#eeba2c" }}>Jainam</span>,
+                      {/* This is <span style={{ color: "#62b0a5" }}>Jainam</span>, */}
+                      This is <span style={{ color: "#62b0a5" }}>Jainam</span>,
                       nice to meet you. <br />I am a{" "}
-                      <span style={{ color: "#eeba2c" }}>{word}</span>
+                      <span style={{ color: "#62b0a5" }}>{word}</span>
                     </Typography>
                   </Grid>
 
@@ -61,7 +62,8 @@ const Home = () => {
                         color="primary"
                         href="/"
                         style={{
-                          background: "#eeba2c",
+                          // background: "#62b0a5",
+                          background: "#62b0a5",
                           fontFamily: "monospace",
                           fontSize: 20,
                         }}
@@ -81,7 +83,13 @@ const Home = () => {
                 unmountOnExit
                 timeout={1500}
               >
-                <img src={jainamImage} alt="jainam" height="50%" />
+                <img src={jainamImage} alt="jainam" height="50%" style={{
+                  backgroundColor:"#62b0a5",
+                  borderRadius:"10%",
+                  borderColor:"#000",
+                  borderWidth:10,
+                  marginTop:10
+                }} />
               </Slide>
             </Grid>
           </Grid>

@@ -13,18 +13,19 @@ const card = (jobTitle, company, skills) => {
   return (
     <React.Fragment>
       <CardContent>
-        <Typography fontFamily={"monospace"} variant="h5" component="div">
-          {company}
+        <Typography fontFamily={"monospace"} variant="h5" component="div" color="#fff">
+          <b>{company}</b>
         </Typography>
-        <Typography fontFamily={"monospace"} sx={{ mb: 1.5 }}>
+        <Typography fontFamily={"monospace"} sx={{ mb: 1.5 }} color="#fff">
           {jobTitle}
         </Typography>
         <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
           {
             skills.map((skill) => (
             <Chip key={skill} label={skill} variant="outlined" style={{
-                        color:"black",
+                        color:"#fff",
                         borderColor:"black",
+                        backgroundColor:"#264143",
                         fontSize:10,
                         width:"30%",
                       }}/>
@@ -53,7 +54,8 @@ export default function OutlinedCard(jobTitle, company, skills) {
       variant="outlined"
       style={{
         color: "black",
-        background: "#eeba2c",
+        // background: "#62b0a5",
+        background: "#62b0a5",
         margin: 50,
         marginBottom: 10,
         marginTop: -10,

@@ -33,7 +33,8 @@ export default function OutlinedCard(title) {
       variant="outlined"
       style={{
         color: "black",
-        background: "#eeba2c",
+        // background: "#62b0a5",
+        background: "2c6e7c",
         margin: 50,
         marginBottom: 10,
         marginTop: -10,

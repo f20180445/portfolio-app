@@ -46,7 +46,8 @@ export default function WorkExperience() {
     <>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Timeline position="alternate">
+        <Timeline position="alternate" style={{
+        }}>
         <Slide
             direction="left"
             in={true}
@@ -55,18 +56,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   May 2023 - August 2023
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <Code />
+                  <Code color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {iSafeVentures}
               </TimelineContent>
             </TimelineItem>
@@ -79,18 +82,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   August 2023 - Present
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <ConstructionIcon />
+                  <ConstructionIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {techStartup}
               </TimelineContent>
             </TimelineItem>
@@ -103,18 +108,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   April 2023 - Present
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <CloudQueueIcon />
+                  <CloudQueueIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {cloudAdmin}
               </TimelineContent>
             </TimelineItem>
@@ -127,18 +134,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   July 2022 - December 2022
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <CodeIcon color="primary" />
+                  <CodeIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {bigbasket}
               </TimelineContent>
             </TimelineItem>
@@ -151,18 +160,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   July 2021 - June 2022
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <InsightsIcon />
+                  <InsightsIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {paypal}
               </TimelineContent>
             </TimelineItem>
@@ -175,18 +186,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   July 2020 - April 2022
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <CategoryIcon />
+                  <CategoryIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {tekie}
               </TimelineContent>
             </TimelineItem>
@@ -199,18 +212,20 @@ export default function WorkExperience() {
             timeout={1500}
           >
             <TimelineItem>
-              <TimelineOppositeContent color="#eeba2c">
-                <Typography fontFamily={"monospace"}>
+              <TimelineOppositeContent color="#62b0a5">
+                <Typography fontFamily={"monospace"} style={{
+                  marginTop:10,
+                }}>
                   May 2021 - July 2021
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="success">
-                  <CategoryIcon />
+                  <CategoryIcon color="#264143"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent color={"#eeba2c"} width={100}>
+              <TimelineContent color={"#62b0a5"} width={100}>
                 {thinkTalent}
               </TimelineContent>
             </TimelineItem>
