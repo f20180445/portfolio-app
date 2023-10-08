@@ -42,12 +42,12 @@ const Navbar = () => {
                 <strong>About</strong>
               </Typography>
             </Button> */}
-            <Button color="primary" href="/work-experience">
+            <Button color="primary" href="/#/work-experience">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Work Experience</strong>
               </Typography>
             </Button>
-            <Button color="primary" href="/skills">
+            <Button color="primary" href="/#/skills">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Projects</strong>
               </Typography>
