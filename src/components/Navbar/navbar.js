@@ -8,6 +8,7 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import theme from "../../assets/theme.js";
+import { Link } from "react-router-dom";
 
 const jainamLogo = require("../../assets/images/jainam_logo_6.png");
 const Navbar = () => {
@@ -42,16 +43,21 @@ const Navbar = () => {
                 <strong>About</strong>
               </Typography>
             </Button> */}
-            <Button color="primary" href="/#/work-experience">
+            <Link to="/work-experience">
+            <Button color="primary">
+              
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Work Experience</strong>
               </Typography>
             </Button>
-            <Button color="primary" href="/#/skills">
+            </Link>
+            <Link to="/skills">
+            <Button color="primary">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Projects</strong>
               </Typography>
             </Button>
+            </Link>
             {/* <Button color="primary" href="/">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Let's Work</strong>
