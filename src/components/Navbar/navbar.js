@@ -33,11 +33,13 @@ const Navbar = () => {
           </Typography>
 
           <Stack direction="row" spacing={7} marginLeft={10}>
-            <Button color="primary" href="/">
+            <Link to="/">
+            <Button color="primary">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>Home</strong>
               </Typography>
             </Button>
+            </Link>
             {/* <Button color="primary" href="about">
               <Typography fontFamily={"monospace"} fontSize={20}>
                 <strong>About</strong>
