@@ -1,4 +1,4 @@
-import './letters.scss'
+import "./letters.scss";
 
 const AnimatedLetters = ({ letterClass, strArray, idx }) => {
   return (
@@ -9,7 +9,7 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
         </span>
       ))}
     </span>
-  )
-}
+  );
+};
 
-export default AnimatedLetters
+export default AnimatedLetters;

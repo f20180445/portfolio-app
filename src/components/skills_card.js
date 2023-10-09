@@ -11,7 +11,12 @@ const card = (title) => {
   return (
     <React.Fragment>
       <CardContent>
-        <Typography fontFamily={"monospace"} variant="h5" component="div" align="center">
+        <Typography
+          fontFamily={"monospace"}
+          variant="h5"
+          component="div"
+          align="center"
+        >
           {title}
         </Typography>
       </CardContent>

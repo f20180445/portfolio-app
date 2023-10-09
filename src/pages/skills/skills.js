@@ -194,7 +194,7 @@ const Skills = () => {
             >
               <iframe width="540" height="280" style={{
                 borderRadius:"10%"
-              }} src="https://www.youtube.com/embed/qQwYqAtldx0" title="DFP Z2_Group9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              }} src="https://www.youtube.com/embed/qQwYqAtldx0" title="DFP Z2_Group9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               
             </Typography>
                 

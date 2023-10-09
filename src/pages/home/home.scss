@@ -1,0 +1,25 @@
+a.social {
+  // margin: 0 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.github {
+  color: #62b0a5;
+}
+
+a.steam {
+  color: #62b0a5;
+}
+
+a.linkedin {
+  color: #62b0a5;
+}
+
+a.instagram {
+  color: #62b0a5;
+}

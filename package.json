@@ -25,7 +25,13 @@
     "sass": "^1.62.1",
     "styled-components": "^5.3.6",
     "tsparticles": "^2.9.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@fortawesome/free-brands-svg-icons":"^6.4.2",
+    "@fortawesome/react-fontawesome":"^0.2.0",
+    "@fortawesome/fontawesome-svg-core":"^6.4.2",
+    "react-social-media-embed":"^2.3.6",
+    "@chakra-ui/react":"^2.8.1",
+    "framer-motion":"^10.16.4"
   },
   "scripts": {
     "predeploy": "npm run build",
