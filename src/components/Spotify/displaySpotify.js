@@ -14,18 +14,48 @@ export const SpotifyNowPlaying = (props) => {
   const [loading, setLoading] = useState(true);
   const [result, setResult] = useState({});
 
+  // useEffect(() => {
+  //   Promise.all([
+  //     getNowPlayingItem(
+  //       props.client_id,
+  //       props.client_secret,
+  //       props.refresh_token
+  //     ),
+  //   ]).then((results) => {
+  //     setResult(results[0]);
+  //     setLoading(false);
+  //   });
+  // });
   useEffect(() => {
-    Promise.all([
-      getNowPlayingItem(
-        props.client_id,
-        props.client_secret,
-        props.refresh_token
-      ),
-    ]).then((results) => {
-      setResult(results[0]);
-      setLoading(false);
-    });
-  });
+    let isMounted = true;
+
+    const fetchData = async () => {
+      try {
+        const results = await Promise.all([
+          getNowPlayingItem(
+            props.client_id,
+            props.client_secret,
+            props.refresh_token
+          ),
+        ]);
+
+        if (isMounted) {
+          setResult(results[0]);
+          setLoading(false);
+        }
+      } catch (error) {
+        // Handle error here
+        console.error("Error fetching data from Spotify API:", error);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      // Cleanup: Clear any ongoing API calls if the component unmounts
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <>

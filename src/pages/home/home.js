@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar.js";
-import { useTypingText } from "../../components/useTypingText.js";
+import { UseTypingText } from "../../components/useTypingText.js";
 import { Grid, Typography, Button, ThemeProvider } from "@mui/material";
 import Slide from "@mui/material/Slide";
 import theme from "../../assets/theme.js";
@@ -16,7 +16,7 @@ import "./home.scss";
 import { SpotifyNowPlaying } from "../../components/Spotify/displaySpotify.js";
 const jainamImage = require("../../assets/images/jainam.png");
 const Home = () => {
-  const { word, stop, start } = useTypingText(
+  const { word, stop, start } = UseTypingText(
     [
       "Software Engineer.",
       "Music Lover.",
@@ -26,6 +26,12 @@ const Home = () => {
     50,
     20
   );
+  const words = [
+    "Software Engineer.",
+    "Music Lover.",
+    "Product Manager.",
+    "Business Analyst.",
+  ];
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -56,6 +62,9 @@ const Home = () => {
                       This is <span style={{ color: "#62b0a5" }}>Jainam</span>,
                       nice to meet you. <br />I am a{" "}
                       <span style={{ color: "#62b0a5" }}>{word}</span>
+                      {/* <span style={{ color: "#62b0a5" }}>
+                        <UseTypingText words={words} />
+                      </span> */}
                     </Typography>
                   </Grid>
 
