@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.ec1feeec.css",
-    "main.js": "/portfolio-app/static/js/main.3c227328.js",
+    "main.css": "/portfolio-app/static/css/main.dbde5d09.css",
+    "main.js": "/portfolio-app/static/js/main.128a9c81.js",
     "static/js/787.30237536.chunk.js": "/portfolio-app/static/js/787.30237536.chunk.js",
     "static/media/baseball_1.png": "/portfolio-app/static/media/baseball_1.9c80667390e3f599d03f.png",
     "static/media/jainam.png": "/portfolio-app/static/media/jainam.e204e69f50ebf48ced88.png",
     "static/media/mumbai.avif": "/portfolio-app/static/media/mumbai.b981daa8485eef99993d.avif",
+    "static/media/jainam_logo_7.png": "/portfolio-app/static/media/jainam_logo_7.1389a29f90b5ab998a0b.png",
     "index.html": "/portfolio-app/index.html",
-    "main.ec1feeec.css.map": "/portfolio-app/static/css/main.ec1feeec.css.map",
-    "main.3c227328.js.map": "/portfolio-app/static/js/main.3c227328.js.map",
+    "main.dbde5d09.css.map": "/portfolio-app/static/css/main.dbde5d09.css.map",
+    "main.128a9c81.js.map": "/portfolio-app/static/js/main.128a9c81.js.map",
     "787.30237536.chunk.js.map": "/portfolio-app/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec1feeec.css",
-    "static/js/main.3c227328.js"
+    "static/css/main.dbde5d09.css",
+    "static/js/main.128a9c81.js"
   ]
 }
