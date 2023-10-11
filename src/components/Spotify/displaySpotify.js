@@ -66,7 +66,7 @@ export const SpotifyNowPlaying = (props) => {
         fontFamily={"monospace"}
         //   variant="h4"
         //   component={"h3"}
-        color={"white"}
+        color={"#dcd6c1"}
       >
         {/* Now Playing on &nbsp; */}
         <a className="instagram social">
@@ -88,12 +88,27 @@ export const SpotifyNowPlaying = (props) => {
                   borderColor: "#000",
                   borderWidth: 10,
                   marginTop: 10,
+                  float: "left",
                 }}
               />
             </Link>
-            <br></br>
-            Title: {result.title} <br />
-            Artist: {result.artist}
+            {/* <br></br> */}
+            <Typography
+              // mt={3}
+              // mb={3}
+              width="75%"
+              fontFamily={"monospace"}
+              //   variant="h4"
+              //   component={"h3"}
+              color={"#dcd6c1"}
+              style={{
+                marginTop: 10,
+                marginLeft: "50%",
+              }}
+            >
+              Title: {result.title} <br />
+              Artist: {result.artist}
+            </Typography>
           </>
         ) : (
           <>Currently Offline on Spotify</>

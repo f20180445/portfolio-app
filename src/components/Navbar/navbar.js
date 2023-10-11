@@ -10,11 +10,18 @@ import {
 import theme from "../../assets/theme.js";
 import { Link } from "react-router-dom";
 
-const jainamLogo = require("../../assets/images/jainam_logo_6.png");
+const jainamLogo = require("../../assets/images/jainam_logo_7.png");
 const Navbar = () => {
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" color="success">
+      <AppBar
+        position="static"
+        color="success"
+        style={{
+          backgroundImage: `linear-gradient(to left, rgba(38, 65, 67, 0),
+          rgba(38, 65, 67, 1))`,
+        }}
+      >
         <Toolbar>
           <Typography
             fontFamily={"cursive"}

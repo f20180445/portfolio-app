@@ -17,11 +17,11 @@ const card = (jobTitle, company, skills) => {
           fontFamily={"monospace"}
           variant="h5"
           component="div"
-          color="#fff"
+          color="primary"
         >
           <b>{company}</b>
         </Typography>
-        <Typography fontFamily={"monospace"} sx={{ mb: 1.5 }} color="#fff">
+        <Typography fontFamily={"monospace"} sx={{ mb: 1.5 }} color="#dcd6c1">
           {jobTitle}
         </Typography>
         <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
@@ -31,11 +31,12 @@ const card = (jobTitle, company, skills) => {
               label={skill}
               variant="outlined"
               style={{
-                color: "#fff",
+                color: "#264143",
                 borderColor: "black",
-                backgroundColor: "#264143",
+                backgroundColor: "#dcd6c1",
                 fontSize: 10,
                 width: "30%",
+                fontWeight: "bolder",
               }}
             />
           ))}
@@ -63,7 +64,7 @@ export default function OutlinedCard(jobTitle, company, skills) {
       style={{
         color: "black",
         // background: "#62b0a5",
-        background: "#62b0a5",
+        background: "#264143",
         margin: 50,
         marginBottom: 10,
         marginTop: -10,

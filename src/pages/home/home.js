@@ -38,8 +38,45 @@ const Home = () => {
         <div className="home-page">
           <Navbar />
           <Grid container spacing={5} columns={24}>
+            <Grid item xs={8}>
+              <Slide
+                direction="up"
+                in={true}
+                mountOnEnter
+                unmountOnExit
+                timeout={1500}
+              >
+                {/* <img src={jainamImage} alt="jainam" height="50%" style={{
+                  backgroundColor:"#62b0a5",
+                  borderRadius:"10%",
+                  borderColor:"#000",
+                  borderWidth:10,
+                  marginTop:10
+                }} /> */}
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "#62b0a5",
+                    borderRadius: "10%",
+                    borderColor: "#000",
+                    // borderWidth:10,
+                    marginTop: 100,
+                    marginRight: 25,
+                    marginLeft: "15%",
+                    width: 400,
+                  }}
+                >
+                  <InstagramEmbed
+                    url="https://www.instagram.com/p/CiIiVpohndg/"
+                    width={328}
+                    height={600}
+                  />
+                </div>
+              </Slide>
+            </Grid>
             <Slide
-              direction="right"
+              direction="left"
               in={true}
               mountOnEnter
               unmountOnExit
@@ -55,13 +92,13 @@ const Home = () => {
                       fontFamily={"monospace"}
                       variant="h4"
                       component={"h3"}
-                      color={"white"}
+                      color={"264143"}
                     >
                       Hey! <br />
                       {/* This is <span style={{ color: "#62b0a5" }}>Jainam</span>, */}
-                      This is <span style={{ color: "#62b0a5" }}>Jainam</span>,
+                      This is <span style={{ color: "#dcd6c1" }}>Jainam</span>,
                       nice to meet you. <br />I am a{" "}
-                      <span style={{ color: "#62b0a5" }}>{word}</span>
+                      <span style={{ color: "#dcd6c1" }}>{word}</span>
                       {/* <span style={{ color: "#62b0a5" }}>
                         <UseTypingText words={words} />
                       </span> */}
@@ -102,11 +139,7 @@ const Home = () => {
                           target="_blank"
                           className="linkedin social"
                         >
-                          <FontAwesomeIcon
-                            icon={faLinkedin}
-                            size="1x"
-                            color="#62b0a5"
-                          />
+                          <FontAwesomeIcon icon={faLinkedin} size="1x" />
                         </a>
                         <a
                           href="https://github.com/f20180445?tab=repositories"
@@ -130,42 +163,6 @@ const Home = () => {
                 </Grid>
               </Grid>
             </Slide>
-            <Grid item xs={8}>
-              <Slide
-                direction="up"
-                in={true}
-                mountOnEnter
-                unmountOnExit
-                timeout={1500}
-              >
-                {/* <img src={jainamImage} alt="jainam" height="50%" style={{
-                  backgroundColor:"#62b0a5",
-                  borderRadius:"10%",
-                  borderColor:"#000",
-                  borderWidth:10,
-                  marginTop:10
-                }} /> */}
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    backgroundColor: "#62b0a5",
-                    borderRadius: "10%",
-                    borderColor: "#000",
-                    // borderWidth:10,
-                    marginTop: 100,
-                    marginRight: 25,
-                    width: 400,
-                  }}
-                >
-                  <InstagramEmbed
-                    url="https://www.instagram.com/p/CiIiVpohndg/"
-                    width={328}
-                    height={600}
-                  />
-                </div>
-              </Slide>
-            </Grid>
           </Grid>
         </div>
       </ThemeProvider>

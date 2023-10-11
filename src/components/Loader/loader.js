@@ -37,7 +37,12 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h2"}
             component={"h2"}
-            color={"#62b0a5"}
+            // color={"#62b0a5"}
+            color={"#dcd6c1"}
+            style={{
+              backgroundImage: `linear-gradient(to left, rgba(38, 65, 67, 0),
+          rgba(38, 65, 67, 1))`,
+            }}
           >
             Jainam Gala
           </Typography>
@@ -49,23 +54,32 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#62b0a5"}
+            // color={"#62b0a5"}
+            color={"#dcd6c1"}
+            style={{
+              backgroundImage: `linear-gradient(to left, rgba(38, 65, 67, 0),
+          rgba(38, 65, 67, 1))`,
+            }}
           >
             Master of Information Systems Management
           </Typography>
         </Fade>
 
-        <Fade in={true} style={{ transitionDelay: "800ms" }} timeout={1200}>
+        {/* <Fade in={true} style={{ transitionDelay: "800ms" }} timeout={1200}>
           <Typography
             fontFamily={"monospace"}
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#62b0a5"}
+            color={"#ebdada"}
+            style={{
+              backgroundImage: `linear-gradient(to left, rgba(38, 65, 67, 0),
+          rgba(38, 65, 67, 1))`,
+            }}
           >
             @
           </Typography>
-        </Fade>
+        </Fade> */}
 
         <Fade in={true} style={{ transitionDelay: "1200ms" }} timeout={1200}>
           <Typography
@@ -73,7 +87,12 @@ let PreLoader2 = () => {
             align={"center"}
             variant={"h3"}
             component={"h3"}
-            color={"#62b0a5"}
+            // color={"#62b0a5"}
+            color={"#dcd6c1"}
+            style={{
+              backgroundImage: `linear-gradient(to left, rgba(38, 65, 67, 0),
+          rgba(38, 65, 67, 1))`,
+            }}
           >
             Carnegie Mellon University
           </Typography>
