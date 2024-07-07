@@ -1,19 +1,39 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.dbde5d09.css",
-    "main.js": "/portfolio-app/static/js/main.128a9c81.js",
+    "main.css": "/portfolio-app/static/css/main.4b4a53a9.css",
+    "main.js": "/portfolio-app/static/js/main.c9ad0613.js",
     "static/js/787.30237536.chunk.js": "/portfolio-app/static/js/787.30237536.chunk.js",
+    "static/media/installm.png": "/portfolio-app/static/media/installm.233f180750e53b6e10ba.png",
+    "static/media/bigjab2.png": "/portfolio-app/static/media/bigjab2.331a3baa855d7fc28303.png",
+    "static/media/recruiting_product.png": "/portfolio-app/static/media/recruiting_product.982539ac215d734bb8a5.png",
+    "static/media/bigjab1.png": "/portfolio-app/static/media/bigjab1.0bc779f4a188b768e543.png",
+    "static/media/workday.png": "/portfolio-app/static/media/workday.10c853e537c20af3b5e7.png",
     "static/media/baseball_1.png": "/portfolio-app/static/media/baseball_1.9c80667390e3f599d03f.png",
+    "static/media/survey.png": "/portfolio-app/static/media/survey.2fcd2a489877104eee75.png",
+    "static/media/classplus.png": "/portfolio-app/static/media/classplus.8287e41c82cc327f46a1.png",
+    "static/media/ticketmaster.png": "/portfolio-app/static/media/ticketmaster.ba4714280e92ce2bfc14.png",
     "static/media/jainam.png": "/portfolio-app/static/media/jainam.e204e69f50ebf48ced88.png",
+    "static/media/gpay.png": "/portfolio-app/static/media/gpay.3681ae90008164534c05.png",
+    "static/media/narrative.png": "/portfolio-app/static/media/narrative.6a42b11f2eb8fcb2feb1.png",
+    "static/media/mlip.png": "/portfolio-app/static/media/mlip.f87bd1b4393a647c2701.png",
     "static/media/mumbai.avif": "/portfolio-app/static/media/mumbai.b981daa8485eef99993d.avif",
+    "static/media/swiggy.png": "/portfolio-app/static/media/swiggy.ba5265d2fcd78c766b26.png",
+    "static/media/anomaly1.png": "/portfolio-app/static/media/anomaly1.0068bb57aa9b9bd65889.png",
+    "static/media/tartanmart.png": "/portfolio-app/static/media/tartanmart.a881a3c6e44e44e71617.png",
+    "static/media/likewise_dating.png": "/portfolio-app/static/media/likewise_dating.bf89660ddf06ed8598fb.png",
+    "static/media/anomaly2.png": "/portfolio-app/static/media/anomaly2.ccbfb349d4972be76923.png",
+    "static/media/linkedin_competitive.png": "/portfolio-app/static/media/linkedin_competitive.d6bd95815d32f82158f3.png",
+    "static/media/hiking.png": "/portfolio-app/static/media/hiking.06791d2bf95d7dedea0c.png",
+    "static/media/bookstore.jpeg": "/portfolio-app/static/media/bookstore.6d70925af9d87fe35877.jpeg",
+    "static/media/blockchain.png": "/portfolio-app/static/media/blockchain.056f06b16140ff999cb8.png",
     "static/media/jainam_logo_7.png": "/portfolio-app/static/media/jainam_logo_7.1389a29f90b5ab998a0b.png",
     "index.html": "/portfolio-app/index.html",
-    "main.dbde5d09.css.map": "/portfolio-app/static/css/main.dbde5d09.css.map",
-    "main.128a9c81.js.map": "/portfolio-app/static/js/main.128a9c81.js.map",
+    "main.4b4a53a9.css.map": "/portfolio-app/static/css/main.4b4a53a9.css.map",
+    "main.c9ad0613.js.map": "/portfolio-app/static/js/main.c9ad0613.js.map",
     "787.30237536.chunk.js.map": "/portfolio-app/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbde5d09.css",
-    "static/js/main.128a9c81.js"
+    "static/css/main.4b4a53a9.css",
+    "static/js/main.c9ad0613.js"
   ]
 }
