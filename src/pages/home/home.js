@@ -14,6 +14,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./home.scss";
 import { SpotifyNowPlaying } from "../../components/Spotify/displaySpotify.js";
+import { GiChessQueen, GiChessPawn } from "react-icons/gi";
+
 const jainamImage = require("../../assets/images/jainam.png");
 const Home = () => {
   const { word, stop, start } = UseTypingText(
@@ -128,13 +130,6 @@ const Home = () => {
                       <div class="social-container">
                         {/* <span style={{fontSize:25}}>Socials </span><br/> */}
                         <a
-                          href="https://www.instagram.com/jainamxgala/"
-                          target="_blank"
-                          className="instagram social"
-                        >
-                          <FontAwesomeIcon icon={faInstagram} size="1x" />
-                        </a>
-                        <a
                           href="https://www.linkedin.com/in/jainam-gala-278b9b1b3/"
                           target="_blank"
                           className="linkedin social"
@@ -149,11 +144,26 @@ const Home = () => {
                           <FontAwesomeIcon icon={faGithub} size="1x" />
                         </a>
                         <a
+                          href="https://www.instagram.com/jainamxgala/"
+                          target="_blank"
+                          className="instagram social"
+                        >
+                          <FontAwesomeIcon icon={faInstagram} size="1x" />
+                        </a>
+                        <a
                           href="https://steamcommunity.com/id/baaphutera/"
                           target="_blank"
                           className="steam social"
                         >
                           <FontAwesomeIcon icon={faSteam} size="1x" />
+                        </a>
+                        <a
+                          href="https://www.chess.com/member/cwgcwg"
+                          target="_blank"
+                          className="chess social"
+                        >
+                          <GiChessPawn size={65} style={{marginLeft: -12, marginBottom: -5}}/>
+                          {/* <FontAwesomeIcon icon={'fa-chess'} size="1x" /> */}
                         </a>
                       </div>
 
