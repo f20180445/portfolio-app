@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Box, Stack, Image, Text, Link, Spinner } from "@chakra-ui/react";
+import { Box, Stack, Link, Spinner } from "@chakra-ui/react";
+import { useMediaQuery } from '@mui/material';
 import styled from "styled-components";
 import getNowPlayingItem from "./spotify";
 import SpotifyLogo from "./SpotifyLogo";
@@ -13,19 +14,8 @@ import { MusicNote } from "@mui/icons-material";
 export const SpotifyNowPlaying = (props) => {
   const [loading, setLoading] = useState(true);
   const [result, setResult] = useState({});
+  const isMobile = useMediaQuery("(max-width: 500px)");
 
-  // useEffect(() => {
-  //   Promise.all([
-  //     getNowPlayingItem(
-  //       props.client_id,
-  //       props.client_secret,
-  //       props.refresh_token
-  //     ),
-  //   ]).then((results) => {
-  //     setResult(results[0]);
-  //     setLoading(false);
-  //   });
-  // });
   useEffect(() => {
     let isMounted = true;
 
@@ -55,20 +45,18 @@ export const SpotifyNowPlaying = (props) => {
       // Cleanup: Clear any ongoing API calls if the component unmounts
       isMounted = false;
     };
-  }, []);
+  }, [props.client_id, props.client_secret, props.refresh_token]);
 
   return (
     <>
       <Typography
         mt={3}
         mb={3}
-        width="75%"
+        width={isMobile ? "100%" : "75%"}
         fontFamily={"monospace"}
-        //   variant="h4"
-        //   component={"h3"}
         color={"#dcd6c1"}
+        // align={ isMobile ? "center" : "right"}
       >
-        {/* Now Playing on &nbsp; */}
         <a className="instagram social">
           <FontAwesomeIcon icon={faSpotify} size="2x" />
         </a>
@@ -76,92 +64,43 @@ export const SpotifyNowPlaying = (props) => {
         {loading ? (
           <Spinner size="md" speed="0.6s" thickness={3} color="gray.500" />
         ) : result.isPlaying ? (
-          <>
+          <Box display="flex" flexDirection={isMobile ? "column" : "row"} alignItems={isMobile ? "center" : "start"}>
             <Link href={result.songUrl} target="_blank">
               <img
                 src={result.albumImageUrl}
-                alt="jainam"
-                height="250"
+                alt="album cover"
+                height={isMobile ? "150" : "250"}
                 style={{
                   backgroundColor: "#62b0a5",
                   borderRadius: "10%",
                   borderColor: "#000",
                   borderWidth: 10,
                   marginTop: 10,
-                  float: "left",
+                  marginLeft: isMobile ? "auto" : 0,
+                  marginRight: isMobile ? "auto" : 0,
                 }}
               />
             </Link>
-            {/* <br></br> */}
             <Typography
-              // mt={3}
-              // mb={3}
               width="75%"
               fontFamily={"monospace"}
-              //   variant="h4"
-              //   component={"h3"}
               color={"#dcd6c1"}
               style={{
                 marginTop: 10,
-                marginLeft: "50%",
+                marginLeft: isMobile ? 0 : "10%",
+                textAlign: isMobile ? "center" : "left",
               }}
+              backgroundColor={isMobile ? "#2c6e7c" : ""}
             >
               Title: {result.title} <br />
               Artist: {result.artist}
             </Typography>
-          </>
+          </Box>
         ) : (
           <>Currently Offline on Spotify</>
         )}
       </Typography>
     </>
-    // {loading ?
-    //   <Stack align="center" mb={8}>
-    //     <Spinner size="md" speed="0.6s" thickness={3} color="gray.500" />
-    //   </Stack>
-    //   :
-    //   <Stack width="full" mb={result.isPlaying ? 2 : 4} spacing={3}>
-    //     <Stack spacing={2} direction="row" align="center">
-    //       <SpotifyLogo />
-    //       <Text fontWeight="semibold">{result.isPlaying ? 'Now playing' : "Currently offline"}</Text>
-    //       {result.isPlaying && <PlayingAnimation />}
-    //     </Stack>
-    //     {result.isPlaying &&
-    //       <Box p={2} borderRadius="lg" borderWidth={1}>
-    //         <Stack direction="row" spacing={4} align="center">
-    //           <Image
-    //             alt={`${result.title} album art`}
-    //             src={result.albumImageUrl}
-    //             width={12}
-    //             height={12}
-    //             borderRadius="sm"
-    //           />
-    //           <Stack spacing={0} overflow="hidden">
-    //             <Link href={result.songUrl} target="_blank">
-    //               <Text
-    //                 fontWeight="semibold"
-    //                 width="full"
-    //                 isTruncated
-    //                 color="alph"
-    //               >
-    //                 {result.title}
-    //               </Text>
-    //             </Link>
-    //             <Text
-    //               color="gray.500"
-    //               isTruncated
-    //             >
-    //               {result.artist}
-    //             </Text>
-    //             <Text></Text>
-    //           </Stack>
-    //         </Stack>
-    //       </Box>
-    //     }
-    //   </Stack>
-    // }
-    // </Box>
-    // </Center>
   );
 };
 

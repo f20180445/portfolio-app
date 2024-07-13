@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar.js";
 import { UseTypingText } from "../../components/useTypingText.js";
-import { Grid, Typography, Button, ThemeProvider } from "@mui/material";
+import { Grid, Typography, Button, ThemeProvider, useMediaQuery } from "@mui/material";
 import Slide from "@mui/material/Slide";
 import theme from "../../assets/theme.js";
 import { InstagramEmbed } from "react-social-media-embed";
@@ -14,12 +14,13 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./home.scss";
 import { SpotifyNowPlaying } from "../../components/Spotify/displaySpotify.js";
-import { GiChessQueen, GiChessPawn } from "react-icons/gi";
+import { GiChessPawn } from "react-icons/gi";
 
 const jainamImage = require("../../assets/images/jainam.png");
+
 const Home = () => {
-  const { word, stop, start } = UseTypingText(
-    [
+  const { word } = UseTypingText(
+    [ "Data Scientist.",
       "Software Engineer.",
       "Music Lover.",
       "Product Manager.",
@@ -28,155 +29,115 @@ const Home = () => {
     50,
     20
   );
-  const words = [
-    "Software Engineer.",
-    "Music Lover.",
-    "Product Manager.",
-    "Business Analyst.",
-  ];
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <div className="home-page">
-          <Navbar />
-          <Grid container spacing={5} columns={24}>
-            <Grid item xs={8}>
-              <Slide
-                direction="up"
-                in={true}
-                mountOnEnter
-                unmountOnExit
-                timeout={1500}
+    <ThemeProvider theme={theme}>
+      <div className="home-page">
+        <Navbar />
+        <Grid container spacing={5} columns={24}>
+          <Grid item xs={isMobile ? 24 : 8}>
+            <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1500}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  backgroundColor: "#62b0a5",
+                  borderRadius: "10%",
+                  marginTop: isMobile ? 50 : 100,
+                  marginRight: isMobile ? 0 : 25,
+                  marginLeft: isMobile ? 0 : "15%",
+                  width: isMobile ? '100%' : 400,
+                }}
               >
-                {/* <img src={jainamImage} alt="jainam" height="50%" style={{
-                  backgroundColor:"#62b0a5",
-                  borderRadius:"10%",
-                  borderColor:"#000",
-                  borderWidth:10,
-                  marginTop:10
-                }} /> */}
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    backgroundColor: "#62b0a5",
-                    borderRadius: "10%",
-                    borderColor: "#000",
-                    // borderWidth:10,
-                    marginTop: 100,
-                    marginRight: 25,
-                    marginLeft: "15%",
-                    width: 400,
-                  }}
-                >
-                  <InstagramEmbed
-                    url="https://www.instagram.com/p/CiIiVpohndg/"
-                    width={328}
-                    height={600}
-                  />
-                </div>
-              </Slide>
-            </Grid>
-            <Slide
-              direction="left"
-              in={true}
-              mountOnEnter
-              unmountOnExit
-              timeout={1500}
-            >
-              <Grid item xs={16}>
-                <Grid container spacing={5} columns={8}>
-                  <Grid item xs={8}>
-                    <Typography
-                      mt={15}
-                      ml={25}
-                      width="75%"
-                      fontFamily={"monospace"}
-                      variant="h4"
-                      component={"h3"}
-                      color={"264143"}
-                    >
-                      Hey! <br />
-                      {/* This is <span style={{ color: "#62b0a5" }}>Jainam</span>, */}
-                      This is <span style={{ color: "#dcd6c1" }}>Jainam</span>,
-                      nice to meet you. <br />I am a{" "}
-                      <span style={{ color: "#dcd6c1" }}>{word}</span>
-                      {/* <span style={{ color: "#62b0a5" }}>
-                        <UseTypingText words={words} />
-                      </span> */}
-                    </Typography>
-                  </Grid>
-
-                  <Grid item xs={8}>
-                    <Typography
-                      ml={25}
-                      fontFamily={"monospace"}
-                      variant="h3"
-                      component={"h3"}
-                      color={"white"}
-                    >
-                      {/* <Button
-                        color="primary"
-                        // href="/"
-                        style={{
-                          // background: "#62b0a5",
-                          background: "#62b0a5",
-                          fontFamily: "monospace",
-                          fontSize: 20,
-                        }}
+                <InstagramEmbed
+                  url="https://www.instagram.com/p/CiIiVpohndg/"
+                  width={isMobile ? '100%' : 328}
+                  height={isMobile ? 400 : 600}
+                />
+              </div>
+            </Slide>
+          </Grid>
+          <Grid item xs={isMobile ? 24 : 16}>
+            <Slide direction="left" in={true} mountOnEnter unmountOnExit timeout={1500}>
+              <Grid container spacing={isMobile ? 2 : 5} columns={isMobile ? 24 : 8}>
+                <Grid item xs={isMobile ? 24 : 8}>
+                  <Typography
+                    mt={isMobile ? 5 : 15}
+                    ml={isMobile ? 0 : 25}
+                    width={isMobile ? "100%" : "75%"}
+                    fontFamily={"monospace"}
+                    variant={isMobile ? "h5" : "h4"}
+                    component={"h3"}
+                    color={"264143"}
+                    align={isMobile ? "center" : "left"}
+                  >
+                    Hey! <br />
+                    This is <span style={{ color: "#dcd6c1" }}>Jainam</span>, nice to meet you. <br />
+                    I am a <span style={{ color: "#dcd6c1" }}>{word}</span>
+                  </Typography>
+                </Grid>
+                <Grid item xs={isMobile ? 24 : 8}>
+                  <Typography
+                    ml={isMobile ? 0 : 25}
+                    mt={isMobile ? 2 : 0}
+                    fontFamily={"monospace"}
+                    variant={isMobile ? "h5" : "h3"}
+                    component={"h3"}
+                    color={"white"}
+                    align={isMobile ? "center" : "left"}
+                  >
+                    <div className="social-container">
+                      <a
+                        href="https://www.linkedin.com/in/jainam-gala-278b9b1b3/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="linkedin social"
                       >
-                        <strong>Hit me up!</strong>
-                      </Button> */}
-                      <div class="social-container">
-                        {/* <span style={{fontSize:25}}>Socials </span><br/> */}
-                        <a
-                          href="https://www.linkedin.com/in/jainam-gala-278b9b1b3/"
-                          target="_blank"
-                          className="linkedin social"
-                        >
-                          <FontAwesomeIcon icon={faLinkedin} size="1x" />
-                        </a>
-                        <a
-                          href="https://github.com/f20180445?tab=repositories"
-                          target="_blank"
-                          className="github social"
-                        >
-                          <FontAwesomeIcon icon={faGithub} size="1x" />
-                        </a>
-                        <a
-                          href="https://www.instagram.com/jainamxgala/"
-                          target="_blank"
-                          className="instagram social"
-                        >
-                          <FontAwesomeIcon icon={faInstagram} size="1x" />
-                        </a>
-                        <a
-                          href="https://steamcommunity.com/id/baaphutera/"
-                          target="_blank"
-                          className="steam social"
-                        >
-                          <FontAwesomeIcon icon={faSteam} size="1x" />
-                        </a>
-                        <a
-                          href="https://www.chess.com/member/cwgcwg"
-                          target="_blank"
-                          className="chess social"
-                        >
-                          <GiChessPawn size={65} style={{marginLeft: -12, marginBottom: -5}}/>
-                          {/* <FontAwesomeIcon icon={'fa-chess'} size="1x" /> */}
-                        </a>
-                      </div>
-
-                      <SpotifyNowPlaying />
-                    </Typography>
-                  </Grid>
+                        <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                      </a>
+                      <a
+                        href="https://github.com/f20180445?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="github social"
+                      >
+                        <FontAwesomeIcon icon={faGithub} size="1x" />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/jainamxgala/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="instagram social"
+                      >
+                        <FontAwesomeIcon icon={faInstagram} size="1x" />
+                      </a>
+                      <a
+                        href="https://steamcommunity.com/id/baaphutera/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="steam social"
+                      >
+                        <FontAwesomeIcon icon={faSteam} size="1x" />
+                      </a>
+                      <a
+                        href="https://www.chess.com/member/cwgcwg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="chess social"
+                      >
+                        <GiChessPawn size={isMobile ? 35 : 65} style={{ marginLeft: -12, marginBottom: -5 }} />
+                      </a>
+                    </div>
+                    <SpotifyNowPlaying />
+                  </Typography>
                 </Grid>
               </Grid>
             </Slide>
           </Grid>
-        </div>
-      </ThemeProvider>
-    </>
+        </Grid>
+      </div>
+    </ThemeProvider>
   );
 };
 
