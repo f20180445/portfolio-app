@@ -6,10 +6,11 @@ import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import HomeBackground from "../homeBackground";
 import theme from "../../assets/theme.js";
-import { ThemeProvider } from "@mui/material";
+import { ThemeProvider, useMediaQuery } from "@mui/material";
 
 let PreLoader2 = () => {
   const navigate = useNavigate();
+  const isMobile = useMediaQuery("(max-width: 500px)");
 
   useEffect(() => {
     setTimeout(() => {
@@ -35,8 +36,8 @@ let PreLoader2 = () => {
           <Typography
             fontFamily={"monospace"}
             align={"center"}
-            variant={"h2"}
-            component={"h2"}
+            variant={isMobile ? "h4" : "h2"}
+            component={isMobile ? "h4" : "h2"}
             // color={"#62b0a5"}
             color={"#dcd6c1"}
             style={{
@@ -52,8 +53,8 @@ let PreLoader2 = () => {
           <Typography
             fontFamily={"monospace"}
             align={"center"}
-            variant={"h3"}
-            component={"h3"}
+            variant={isMobile ? "h5" : "h3"}
+            component={isMobile ? "h5" : "h3"}
             // color={"#62b0a5"}
             color={"#dcd6c1"}
             style={{
@@ -85,8 +86,8 @@ let PreLoader2 = () => {
           <Typography
             fontFamily={"monospace"}
             align={"center"}
-            variant={"h3"}
-            component={"h3"}
+            variant={isMobile ? "h5" : "h3"}
+            component={isMobile ? "h5" : "h3"}
             // color={"#62b0a5"}
             color={"#dcd6c1"}
             style={{
