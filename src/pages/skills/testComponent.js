@@ -157,32 +157,53 @@ export default function TitlebarBelowImageList({ tabName }) {
     ],
     'product': [
       {
-        img: workday,
-        title: 'Workday Talent Assessment',
-        author: 'Jainam Gala',
-        skill: ['Business Strategy', 'Marketing', 'Financial Analysis', 'Market Positioning', 'Product Concept', 'Wireframing'],
-        url: 'https://drive.google.com/file/d/1QSodq-sGyCiYs_wSE_IHe6K2YGKzdJRa/view'
+          img: workday,
+          title: 'Workday Talent Assessment',
+          author: 'Jainam Gala',
+          skill: ['Business Strategy', 'Marketing', 'Financial Analysis', 'Market Positioning', 'Product Concept', 'Wireframing'],
+          url: 'https://drive.google.com/file/d/1QSodq-sGyCiYs_wSE_IHe6K2YGKzdJRa/view'
       },
       {
-        img: likewise,
-        title: 'Likewise Dating App',
-        author: 'Jainam Gala',
-        skill: ['New Product', 'User Personas', 'User Interviews', 'Competitor Analysis', 'Differentiation', 'Financial Analysis'],
-        url: 'https://docs.google.com/presentation/d/1f5mgnotPhHHz7z6qkKqdc9tw5TK2w-j4/edit#slide=id.p1'
+          img: likewise,
+          title: 'Likewise Dating App',
+          author: 'Jainam Gala',
+          skill: ['New Product', 'User Personas', 'User Interviews', 'Competitor Analysis', 'Differentiation', 'Financial Analysis'],
+          url: 'https://docs.google.com/presentation/d/1f5mgnotPhHHz7z6qkKqdc9tw5TK2w-j4/edit#slide=id.p1'
       },
       {
-        img: linkedin,
-        title: 'Linkedin Competitive Analysis',
-        author: 'Jainam Gala',
-        skill: ['Competitor Analysis', 'SWOT Analysis', 'Market Research', 'Product Teardown', 'Growth Strategy', 'Marketing Strategy'],
-        url: 'https://drive.google.com/file/d/1kFiJdGLxsMymToGJz67zeo5a9IJBkUIE/view?usp=sharing'
+          img: linkedin,
+          title: 'Linkedin Competitive Analysis',
+          author: 'Jainam Gala',
+          skill: ['Competitor Analysis', 'SWOT Analysis', 'Market Research', 'Product Teardown', 'Growth Strategy', 'Marketing Strategy'],
+          url: 'https://drive.google.com/file/d/1kFiJdGLxsMymToGJz67zeo5a9IJBkUIE/view'
       },
       {
-        img: recruit,
-        title: 'Recruiting Product',
-        author: 'Jainam Gala',
-        skill: ['Product Vision', 'Design Sprints', 'User Testing', 'Prototype Iteration', 'Lean Startup Methodology', 'Kano Model'],
-        url: 'https://drive.google.com/drive/folders/1uSxXUOV5c10AHG4i7l4sDXZpln0-DHY3?usp=sharing'
+          img: classplus,
+          title: 'Classplus Feature Critique',
+          author: 'Jainam Gala',
+          skill: ['User Journey', 'User Persona', 'Prioritization', 'Metrics'],
+          url: 'https://drive.google.com/file/d/115QXjzqLU3O0DcKHsrYLLKi3fHI8cGZq/view'
+      },
+      {
+          img: recruit,
+          title: 'Recruitment in Startups',
+          author: 'Jainam Gala',
+          skill: ['User Journey', 'User Persona', 'Effort-Impact', 'Metrics', ],
+          url: 'https://drive.google.com/file/d/18olJJvw3aGpnLAPF4Nbh1q7S63HNglyn/view'
+      },
+      {
+          img: gpay,
+          title: 'Favorite Product - Google Pay',
+          author: 'Jainam Gala',
+          skill: ['User Types', 'Feature Breakdown', 'Differentiation'],
+          url: 'https://drive.google.com/file/d/1bfAj74DE0LSFGdoNlgDDZbuRtzokJvia/view'
+      },
+      {
+          img: swiggy,
+          title: 'Swiggy - Food Delivery',
+          author: 'Jainam Gala',
+          skill: ['Problem Solving', 'User Persona'],
+          url: 'https://drive.google.com/file/d/1bfAj74DE0LSFGdoNlgDDZbuRtzokJvia/view'
       },
     ]
   };
