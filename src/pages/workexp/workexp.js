@@ -25,7 +25,7 @@ export default function WorkExperience() {
     "SQL",
     "JIRA",
   ]);
-  const paypal = OutlinedCard("Business Analyst Intern", "PayPal", [
+  const paypal = OutlinedCard("Business Analyst", "PayPal", [
     "Python",
     "SQL",
     "Tableau",
@@ -33,7 +33,7 @@ export default function WorkExperience() {
     "NumPy",
     "Pandas",
   ]);
-  const tekie = OutlinedCard("Product Management Intern", "Tekie", [
+  const tekie = OutlinedCard("Product Manager", "Tekie", [
     "React.js",
     "Node.js",
     "User Interview",
@@ -41,7 +41,7 @@ export default function WorkExperience() {
     "Content",
   ]);
   const thinkTalent = OutlinedCard(
-    "Product Management Intern",
+    "Product Manager",
     "Think Talent",
     ["UX Research", "User Flows", "Market Research", "Prioritization"]
   );
@@ -56,9 +56,14 @@ export default function WorkExperience() {
     ["Market Discovery", "Building MVP", "Team Building", "Fundraising"]
   );
   const iSafeVentures = OutlinedCard(
-    "Summer Software Engineer Intern",
+    "Software Engineer",
     "ISAFE Ventures",
     ["React Native", "SQL", "Gitlab", "Firebase", "Postman"]
+  );
+  const bny = OutlinedCard(
+    "Senior Associate Data Scientist",
+    "BNY (Bank of New York)",
+    ['GenAI', 'LLM', 'Data Analytics', 'SQL', 'Data Visualization']
   );
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -69,6 +74,33 @@ export default function WorkExperience() {
         <Navbar />
         <Grid container justifyContent="center">
           <Timeline position={isSmallScreen ? "left" : "alternate"} style={{}}>
+          <Slide direction="right" in={true} mountOnEnter unmountOnExit timeout={1500}>
+              <TimelineItem>
+                {!isSmallScreen && (
+                  <TimelineOppositeContent color="#264143">
+                    <Typography fontFamily={"monospace"} style={{ marginTop: 10 }}>
+                      July 2024 - Present
+                    </Typography>
+                  </TimelineOppositeContent>
+                )}
+                <TimelineSeparator>
+                  <TimelineDot color="secondary">
+                    <ConstructionIcon color="primary" />
+                  </TimelineDot>
+                  {!isSmallScreen && <TimelineConnector sx={{ background: "#264143" }} />}
+                </TimelineSeparator>
+                <TimelineContent color={"#62b0a5"} width={100}>
+                  {bny}
+                </TimelineContent>
+                {isSmallScreen && (
+                  <TimelineOppositeContent color="#264143">
+                    <Typography fontFamily={"monospace"} style={{ marginTop: 10 }}>
+                      July 2021 - June 2022
+                    </Typography>
+                  </TimelineOppositeContent>
+                )}
+              </TimelineItem>
+            </Slide>
             <Slide direction="left" in={true} mountOnEnter unmountOnExit timeout={1500}>
               <TimelineItem>
                 {!isSmallScreen && (
