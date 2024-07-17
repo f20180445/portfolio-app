@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.89a535b5.css",
-    "main.js": "/portfolio-app/static/js/main.117ac763.js",
+    "main.js": "/portfolio-app/static/js/main.a0d03ab9.js",
     "static/js/787.30237536.chunk.js": "/portfolio-app/static/js/787.30237536.chunk.js",
     "static/media/installm.png": "/portfolio-app/static/media/installm.233f180750e53b6e10ba.png",
     "static/media/recruiting_product.png": "/portfolio-app/static/media/recruiting_product.982539ac215d734bb8a5.png",
@@ -27,11 +27,11 @@
     "static/media/jainam_logo_7.png": "/portfolio-app/static/media/jainam_logo_7.1389a29f90b5ab998a0b.png",
     "index.html": "/portfolio-app/index.html",
     "main.89a535b5.css.map": "/portfolio-app/static/css/main.89a535b5.css.map",
-    "main.117ac763.js.map": "/portfolio-app/static/js/main.117ac763.js.map",
+    "main.a0d03ab9.js.map": "/portfolio-app/static/js/main.a0d03ab9.js.map",
     "787.30237536.chunk.js.map": "/portfolio-app/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89a535b5.css",
-    "static/js/main.117ac763.js"
+    "static/js/main.a0d03ab9.js"
   ]
 }
